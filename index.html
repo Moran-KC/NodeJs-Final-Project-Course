@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Final Work</title>
+    <script src="client.js"></script>
+</head>
+
+<body onload="getAll()">
+    <!-- --------GET---------- -->
+
+    <table style="width:100%" border="1" id="schoolTable"></table>
+
+
+    <!-- --------POST---------- -->
+
+    <h2>Add new Collage\University</h2>
+
+    <div>
+        <label>Enter Domain:</label>
+        <input id="AddDomain" />
+
+        <label>Enter Web Page:</label>
+        <input id="AddWeb_page" />
+
+        <label>Enter Name:</label>
+        <input id="AddName" />
+
+        <button onclick="addNewSchool()">Add Collage\University</button>
+
+    </div>
+
+    <hr/>
+
+    <!-- --------DELETE---------- -->
+    <h2>Choose Collage\University to Delete</h2>
+    <div>
+        <select id="schoolList"></select>
+        <button onclick="deleteSchool()">Delete</button>
+
+    </div>
+
+</body>
+
+</html>
